@@ -90,24 +90,35 @@ public class Finder {
 //        return  answer;
 //    }
 //                              6
-    public static final  char[] VOWELS = {'e',  'y', 'u',  'i', 'o', 'a'};
+//    public static final  char[] VOWELS = {'e',  'y', 'u',  'i', 'o', 'a'};
+//    public static String findLetter(char letter) {
+//        letter = Character.toLowerCase(letter);
+//
+//        String answer = "not a letter...";
+//
+//        if (Character.isLetter(letter)) {
+//            boolean isVowelLetter = false;
+//            for (int i = 0; i <= VOWELS.length && !isVowelLetter; i++) {
+//                if (letter == VOWELS[i]) {
+//                    isVowelLetter = true;
+//                }
+//            }
+//            if (isVowelLetter) {
+//                answer = "vowel";
+//            } else {
+//                answer = "consonant";
+//            }
+//        }
+//        return  answer;
+//    }
+//                          7
     public static String findLetter(char letter) {
         letter = Character.toLowerCase(letter);
 
         String answer = "not a letter...";
 
         if (Character.isLetter(letter)) {
-            boolean isVowelLetter = false;
-            for (int i = 0; i <= VOWELS.length && !isVowelLetter; i++) {
-                if (letter == VOWELS[i]) {
-                    isVowelLetter = true;
-                }
-            }
-            if (isVowelLetter) {
-                answer = "vowel";
-            } else {
-                answer = "consonant";
-            }
+
         }
         return  answer;
     }
