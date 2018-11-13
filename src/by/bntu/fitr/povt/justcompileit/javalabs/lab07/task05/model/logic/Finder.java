@@ -112,13 +112,29 @@ public class Finder {
 //        return  answer;
 //    }
 //                          7
+//    public static String findLetter(char letter) {
+//        String letterInString = Character.toString(letter);
+//
+//        String answer = "not a letter...";
+//
+//        if (Character.isLetter(letter)) {
+//            boolean isVowelLetter = letterInString.matches("^(?i:[aeuio]).*");
+//            if (isVowelLetter) {
+//                answer = "vowel";
+//            } else {
+//                answer = "consonant";
+//            }
+//        }
+//        return  answer;
+//    }
+//                               8
     public static String findLetter(char letter) {
         letter = Character.toLowerCase(letter);
 
         String answer = "not a letter...";
 
         if (Character.isLetter(letter)) {
-
+            answer = ("aeuio".indexOf(letter) != -1)? "vowel" : "consonant";
         }
         return  answer;
     }
