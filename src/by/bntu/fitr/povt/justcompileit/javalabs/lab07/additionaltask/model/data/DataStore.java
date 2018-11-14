@@ -18,8 +18,8 @@ public class DataStore {
         return (year >= MIN_YEAR);
     }
 
-    private int getMaxDayOfTheMonth(int month) {
-        int maxDay = 0;
+    public int getMaxDayOfTheMonth(int month) {
+        int maxDay;
         switch (month) {
             case 1:
             case 3:
@@ -50,21 +50,33 @@ public class DataStore {
         return (day >= MIN_DAY && day <= maxDay);
     }
 
-    public void getMonth(int month) {
+    public void changeMonth(int month) {
         if (isValidMonth(month)) {
             this.month = month;
         }
     }
 
-    public void getYear(int year) {
+    public void changeYear(int year) {
         if (isValidYear(year)) {
             this.year = year;
         }
     }
 
-    public void getDay(int day) {
+    public void changeDay(int day) {
         if (isValidDay(day)) {
             this.day = day;
         }
+    }
+
+    public int getDay() {
+        return this.day;
+    }
+
+    public int getMonth() {
+        return this.month;
+    }
+
+    public int getYear() {
+        return this.year;
     }
 }
