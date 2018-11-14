@@ -118,8 +118,7 @@ public class Finder {
 //        String answer = "not a letter...";
 //
 //        if (Character.isLetter(letter)) {
-//            boolean isVowelLetter = letterInString.matches("^(?i:[aeuio]).*");
-//            if (isVowelLetter) {
+//            if (letterInString.matches("^(?i:[aeuio]).*")) {
 //                answer = "vowel";
 //            } else {
 //                answer = "consonant";
