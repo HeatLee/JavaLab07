@@ -10,6 +10,18 @@ public class DataStore {
     private int month = 0;
     private int day = 0;
 
+    public int getMAX_MONTH() {
+        return MAX_MONTH;
+    }
+
+    public int getMIN_DAY() {
+        return MIN_DAY;
+    }
+
+    public int getMIN_MONTH() {
+        return MIN_MONTH;
+    }
+
     private boolean isValidMonth(int month) {
         return (month >= this.MIN_MONTH && month <= this.MAX_MONTH);
     }

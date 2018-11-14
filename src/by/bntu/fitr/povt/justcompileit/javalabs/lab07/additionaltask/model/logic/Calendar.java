@@ -19,12 +19,12 @@ public class Calendar {
             int nextMonth = month;
             int nextYear = year;
 
-            if (day == dataStore.getMaxDayOfTheMonth(month) && month == 12) {
-                nextDay = 1;
-                nextMonth = 1;
+            if (day == dataStore.getMaxDayOfTheMonth(month) && month == dataStore.getMAX_MONTH()) {
+                nextDay = dataStore.getMIN_DAY();
+                nextMonth = dataStore.getMIN_MONTH();
                 ++nextYear;
             } else if (day == dataStore.getMaxDayOfTheMonth(month)) {
-                nextDay = 1;
+                nextDay = dataStore.getMIN_DAY();
                 ++nextMonth;
             } else {
                 ++nextDay;
